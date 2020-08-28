@@ -30,7 +30,7 @@
 #include <Adafruit_BMP280.h>  // Install Adafruit BMP280 library!!!
 Adafruit_BMP280 bmp; // I2C 
 
-// Connect VIN of the BMP085 sensor to 3.3V (NOT 5.0V!)
+// Connect VIN of the BMP280 sensor to 3.3V (NOT 5.0V!)
 // Connect GND to Ground
 // Connect SCL GPIO 22
 // Connect SDA GPIO 21
