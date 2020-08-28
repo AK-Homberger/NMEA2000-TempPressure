@@ -7,7 +7,7 @@ The BMP280 measures temperature and barometric pressure. Small PCBs can be bough
 
 The data is sent to NME2000 network with PGN130310 (Outside Environmental Parameters)
 
-The wiring is detailled in the schematices avove. 
+The wiring is detailled in the schematics avove. 
 
 The project requires the NMEA2000 and the NMEA2000_esp32 libraries from Timo Lappalainen: https://github.com/ttlappalainen. Both libraries have to be downloaded and installed.
 
