@@ -5,7 +5,7 @@ This repository shows how to  measure temperature and barometric pressure with a
 
 The BMP280 measures temperature and barometric pressure. Small PCBs can be bought from Adafruit or AZ-Delivery for example.
 
-The data is sent to NME2000 network with PGN130310 (Outside Environmental Parameters)
+The data is sent to NMEA2000 network with PGN130310 (Outside Environmental Parameters)
 
 The wiring is detailled in the schematics avove. 
 
