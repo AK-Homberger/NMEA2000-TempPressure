@@ -1,9 +1,9 @@
 # NMEA2000-TempPressure
-This repository shows howto  measure temperature and barometric pressure with a BMP280 sensor and send it to NME2000 network.
+This repository shows how to  measure temperature and barometric pressure with a BMP280 sensor and send it to NME2000 network.
 
 ![Schematics](https://github.com/AK-Homberger/NMEA2000-TempPressure/blob/master/NMEA2000%20Barometer.png)
 
-The BMP280 measures temperature and barometric pressure. Small PCBs can be bougt from Adafruit or AZ-Delivery for example.
+The BMP280 measures temperature and barometric pressure. Small PCBs can be bought from Adafruit or AZ-Delivery for example.
 
 The data is sent to NME2000 network with PGN130310 (Outside Environmental Parameters)
 
