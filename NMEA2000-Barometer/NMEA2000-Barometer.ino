@@ -12,7 +12,7 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-// NMEA2000 Temperature and Barometric Pressure with BMP085
+// NMEA2000 Temperature and Barometric Pressure with BMP280
 // Version 0.1, 28.08.2020, AK-Homberger
 
 #define ESP32_CAN_TX_PIN GPIO_NUM_5  // Set CAN TX port to 5 
