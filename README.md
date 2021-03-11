@@ -19,6 +19,8 @@ For the ESP32 CAN bus, I used the "Waveshare SN65HVD230 Can Board" as transceive
 
 The 12 Volt is reduced to 5 Volt with a DC Step-Down_Converter (D24V10F5).
 
+If you want to use an BME280 device, you can have a look to NMEA2000 Workshop examples: https://github.com/AK-Homberger/NMEA2000-Workshop/tree/main/Software
+
 # Partlist:
 
 - ESP32 [Link](https://www.amazon.de/AZDelivery-NodeMCU-Development-Nachfolgermodell-ESP8266/dp/B071P98VTG/ref=sxts_sxwds-bia-wc-drs3_0?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&cv_ct_cx=ESP32&dchild=1&keywords=ESP32) 
