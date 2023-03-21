@@ -39,8 +39,10 @@ Adafruit_BMP280 bmp; // I2C
 
 int NodeAddress;  // To store last Node Address
 
-double Temperature = 0;
-double BarometricPressure = 0;
+double dTemperature = 0;
+double dTempoffset = 2;
+double dBarometricPressure = 0;
+double dBarooffset = -3000;
 
 Preferences preferences;             // Nonvolatile storage on ESP32 - To store LastDeviceAddress
 
@@ -137,11 +139,11 @@ void SendN2kTempPressure(void) {
 
   if ( IsTimeToUpdate(SlowDataUpdated) ) {
     SetNextUpdate(SlowDataUpdated, SlowDataUpdatePeriod);
+    
+    dTemperature = bmp.readTemperature() - dTempoffset;
+    dBarometricPressure = bmp.readPressure() - dBarooffset;
 
-    Temperature = bmp.readTemperature();
-    BarometricPressure = bmp.readPressure();
-
-    Serial.printf("Temperature: %3.1f °C - Barometric Pressure: %6.0f Pa\n", Temperature, BarometricPressure);
+    Serial.printf("Temperature: %3.1f °C - Barometric Pressure: %6.0f Pa\n", dTemperature, dBarometricPressure);
 
     SetN2kPGN130310(N2kMsg, 0, N2kDoubleNA, CToKelvin(Temperature), BarometricPressure);
     NMEA2000.SendMsg(N2kMsg);
